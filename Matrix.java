@@ -4,11 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Matrica {
-	// NIJE DOZVOLJENO MENJANJE MAIN FUNKCIJE!!!!!!!!!!!!!!
-	// NIJE DOZOVLJENO MENJANJE POTPISA FUNKCIJA(POTPIS FUNKCIJE SE SASTOJI OD
-	// POVRATNE VREDNOSTI, IMENA FUNKCIJE I PARAMETARA)
-	// DOZVOLJENO JE ALI NIJE POZELJNO NITI POTREBNO DEFINISATI I DODAVATI NOVE
-	// FUNKCIJE
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		@SuppressWarnings("resource")
@@ -88,16 +84,9 @@ public class Matrica {
 			}
 		}
 		return elementiNaGlavnojDijagonali;
-		// return null; // STOJI OVDE SAMO DA SE KOMPAJLER NE BI BUNIO STO FUNKCIJA KOJA
-		// VRACA POVRATNU
-		// VREDNOST NEMA RETRUN U SEBI
-		// NAKON STO IMPLEMENTIRATE FUNKCIJU, ZAMENITE OVAJ RETURN NULL NEKIM KOJI VI
-		// MISLITE DA TREBA
-		// ISTO VAZI I ZA FUNKCIJE ISPOD KOJE IMAJU RETURN NULL
 	}
 
 	public static int[] elementiNaSporednojDijagonali(int[][] matrica) {
-		// TODO
 		int[] elementiNaSporednojDijagonali = new int[matrica.length];
 		for (int i = matrica.length - 1, j = 0; i >= 0; i--, j++) {
 			elementiNaSporednojDijagonali[j] = matrica[i][j];
@@ -106,7 +95,6 @@ public class Matrica {
 	}
 
 	public static int[][] transponujMatricu(int[][] matrica) {
-		// TODO
 		int[][] transponovanaMatrica = new int[matrica[0].length][matrica.length];
 		for (int i = 0; i < matrica.length; i++) {
 			for (int j = 0; j < matrica[i].length; j++) {
@@ -117,7 +105,6 @@ public class Matrica {
 	}
 
 	public static void ispisiElementeIznadGlavneDijagonale(int[][] matrica) {
-		// TODO
 		int n = matrica[0].length - 1;
 		;
 		for (int i = 0; i < matrica.length; i++) {
@@ -136,7 +123,6 @@ public class Matrica {
 	}
 
 	public static void ispisiElementeIspodGlavneDijagonale(int[][] matrica) {
-		// TODO
 		int n = matrica[0].length;
 		for (int i = 0; i < matrica.length; i++) {
 			for (int j = 0; j < matrica.length - n; j++) {
@@ -151,7 +137,6 @@ public class Matrica {
 	}
 
 	public static void ispisiMatricu(int[][] matrica) {
-		// TODO
 		for (int i = 0; i < matrica.length; i++) {
 			for (int j = 0; j < matrica[i].length; j++) {
 				if (matrica[i][j] < 10) {
@@ -165,14 +150,12 @@ public class Matrica {
 	}
 
 	public static void ispisiNiz(int[] niz) {
-		// TODO
 		for (int i = 0; i < niz.length; i++) {
 			System.out.print(niz[i] + " ");
 		}
 	}
 
 	public static int[] ukloniElementeKojiSePonavljajuUnizu(int[] niz) {
-		// TODO
 		int brojacUnikata = 0;
 		int[] nizBezElemenataKojiSePonavljaju = new int[niz.length];
 		for (int i = 0; i < nizBezElemenataKojiSePonavljaju.length; i++) {
